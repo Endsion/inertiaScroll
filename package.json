@@ -1,0 +1,21 @@
+{
+  "name": "inertiascroll",
+  "version": "1.0.0",
+  "description": "Inertial scrolling under dragging scene",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/lib.js", 
+    "lib": "esbuild src/index.ts --outfile=dist/output.js --bundle --loader:.ts=ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scroll",
+    "drag",
+    "inertial"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.14.50"
+  }
+}
