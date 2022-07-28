@@ -4,7 +4,7 @@
   "description": "Inertial scrolling under dragging scene",
   "main": "index.js",
   "scripts": {
-    "build": "node build/lib.js", 
+    "build": "node build/lib.js",
     "lib": "esbuild src/index.ts --outfile=dist/output.js --bundle --loader:.ts=ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,12 @@
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "esbuild": "^0.14.50"
+  "devDependencies": {
+    "esbuild": "^0.14.50",
+    "esbuild-plugin-d.ts": "^1.1.0",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "@types/lodash": "^4.14.182"
   }
 }
