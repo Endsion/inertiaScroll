@@ -1,6 +1,3 @@
-// src/index.ts
-import { throttle } from "lodash";
-
 // src/utils/index.ts
 var assert = (type) => {
   return (val) => {
@@ -23,6 +20,17 @@ var compose = (...funcs) => {
   }
   return funcs.reduce((a, b) => (...args) => a(b(...args)));
 };
+function throttle(fn, delay = 500) {
+  let timer = null;
+  return (...args) => {
+    if (timer)
+      return;
+    timer = setTimeout(() => {
+      fn.apply(this, arguments);
+      timer = null;
+    }, delay);
+  };
+}
 
 // src/index.ts
 var allowScroll = true;
