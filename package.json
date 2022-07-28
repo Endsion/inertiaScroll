@@ -1,5 +1,5 @@
 {
-  "name": "inertiascroll",
+  "name": "inertia-scroll",
   "version": "1.0.0",
   "description": "Inertial scrolling under dragging scene",
   "main": "index.js",

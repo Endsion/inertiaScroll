@@ -28,7 +28,7 @@ const assert = (type:string):Function => {
    
   function throttle(fn:Function, delay = 500) {
     let timer:number|null = null;
-    return (...args) => {
+    return <T extends (...args: any[]) => any>(...args: Parameters<T>) => {
       if (timer) return;
       timer = setTimeout(() => {
         // @ts-ignore

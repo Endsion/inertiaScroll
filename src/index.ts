@@ -1,5 +1,5 @@
-import { throttle } from 'lodash'
-import { isDOM, compose } from './utils';
+// import { throttle } from 'lodash'
+import { isDOM, compose, throttle } from './utils';
 import { IElProp, Direction, IMouseCoord } from './types'
 // 1 引用类型
 // 2 暴露方法
